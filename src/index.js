@@ -126,7 +126,7 @@ class SimpleVideo {
 
     if (this.data.url) {
       video.src = this.data.url;
-      video.controls = this.data.controls;
+      video.controls = true;
       video.autoplay = this.data.autoplay;
       video.muted = this.data.muted;
     }

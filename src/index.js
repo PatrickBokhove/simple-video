@@ -126,10 +126,12 @@ class SimpleVideo {
 
     if (this.data.url) {
       video.src = this.data.url;
-      video.controls = true;
+      video.controls = this.data.controls;
       video.autoplay = this.data.autoplay;
       video.muted = this.data.muted;
     }
+
+    console.log(video);
 
     video.onloadstart = () => {
       wrapper.classList.remove(this.CSS.loading);

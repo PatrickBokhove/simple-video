@@ -131,8 +131,6 @@ class SimpleVideo {
       video.muted = this.data.muted;
     }
 
-    console.log(video);
-
     video.onloadstart = () => {
       wrapper.classList.remove(this.CSS.loading);
       videoHolder.appendChild(video);

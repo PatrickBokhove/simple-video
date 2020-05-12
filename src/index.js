@@ -75,7 +75,7 @@ class SimpleVideo {
       url: data.url || '',
       caption: data.caption || '',
       autoplay: data.autoplay !== undefined ? data.autoplay : false,
-      controls: data.controls !== undefined ? data.controls : false,
+      controls: true,
       muted: data.muted !== undefined ? data.muted : false,
       stretched: data.stretched !== undefined ? data.stretched : false,
     };
